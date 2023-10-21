@@ -110,7 +110,7 @@ canvas {
   top: 0;
   left: 0;
   z-index: 0;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .categories-container {

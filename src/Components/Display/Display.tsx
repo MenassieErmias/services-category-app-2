@@ -3,9 +3,10 @@ import TopCategory from "../TopCategory/TopCategory";
 import CreatedCategories from "../CreatedCategories/CreatedCategories";
 // PROP TYPE
 type propTypes = {
-
+    rows: { name: string, id: number, parentId: number, level: number }[][],
+    addNode: Function
 }
-const Display = ({ }: propTypes) => {
+const Display = ({ rows, addNode }: propTypes) => {
 
     // Make the canvas full width of the viewport
     useEffect(() => {
@@ -15,11 +16,11 @@ const Display = ({ }: propTypes) => {
         canvas.height = window.innerHeight;
     }, [])
     return (
-        <div className="display-add">
+        <div className="display-container">
             <canvas className="display"></canvas>
             <div className="categories-container">
                 <TopCategory />
-                <CreatedCategories />
+                <CreatedCategories rows={rows} addNode={addNode} />
             </div>
         </div>
     )

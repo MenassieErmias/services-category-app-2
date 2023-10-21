@@ -1,8 +1,19 @@
+import { useState } from "react";
+
+// COMPONENTS IMPORT
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
+  // STATE
+  const [servicesCount, setServicesCount] = useState<number>(0);
+  const [zoom, setZoom] = useState<number>(100);
+
   return (
     <div className="App">
-
+      <Navbar
+        servicesCount={servicesCount}
+        zoom={zoom}
+      />
     </div>
   );
 }

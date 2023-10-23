@@ -28,38 +28,38 @@ function App() {
     setRows(newRows);
   }
 
-  useEffect(() => {
-    setRows([
-      [
-        {
-          name: 'Menassie',
-          id: 1,
-          parentId: 0,
-          level: 1
-        },
-        {
-          name: 'Menassie',
-          id: 2,
-          parentId: 0,
-          level: 1
-        },
-      ],
-      [
-        {
-          name: 'Menassie',
-          id: 1,
-          parentId: 0,
-          level: 1
-        },
-        {
-          name: 'Menassie',
-          id: 2,
-          parentId: 0,
-          level: 1
-        },
-      ]
-    ])
-  }, [])
+  // useEffect(() => {
+  //   setRows([
+  //     [
+  //       {
+  //         name: 'Menassie',
+  //         id: 1,
+  //         parentId: 0,
+  //         level: 1
+  //       },
+  //       {
+  //         name: 'Menassie',
+  //         id: 2,
+  //         parentId: 0,
+  //         level: 1
+  //       },
+  //     ],
+  //     [
+  //       {
+  //         name: 'Menassie',
+  //         id: 1,
+  //         parentId: 0,
+  //         level: 1
+  //       },
+  //       {
+  //         name: 'Menassie',
+  //         id: 2,
+  //         parentId: 0,
+  //         level: 1
+  //       },
+  //     ]
+  //   ])
+  // }, [])
 
   return (
     <div className="App">

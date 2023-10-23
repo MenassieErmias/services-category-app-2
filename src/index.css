@@ -165,7 +165,6 @@ canvas {
 /* CATEGORY COMPONENT */
 
 .category {
-  position: relative;
   display: flex;
   align-items: center;
   margin: 1rem auto;
@@ -180,13 +179,11 @@ canvas {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1rem;
 }
 
 .buttons-container {
   display: flex;
   align-items: center;
-  border: 1px solid black;
 }
 
 .delete_button,

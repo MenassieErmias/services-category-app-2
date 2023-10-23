@@ -7,13 +7,13 @@ const CreatedCategories = ({ rows, addNode }: propTypes) => {
     return (
         <div className="rows">
             {
-                rows.map((row: { name: string, parentId: number }[], index: number) => {
+                rows.map((row: { name: string, parentId: number, id: number, level: number }[], index: number) => {
                     return (
                         <div className="row" key={index}>
                             {
-                                row.map((category: { name: string, parentId: number }, index) => {
+                                row.map((category: { name: string, id: number, parentId: number, level: number }, index: number) => {
                                     return (
-                                        <Category key={index} name={category.name} parentId={category.parentId} addNode={addNode} />
+                                        <Category key={index} level={category.level} id={category.id} name={category.name} parentId={category.parentId} addNode={addNode} />
                                     )
                                 })
                             }
